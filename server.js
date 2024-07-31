@@ -46,6 +46,10 @@ app.get("/contact", (req, res) => {
   res.sendFile(path.resolve(__dirname,"./Public","contact.html"));
 });
   
+app.get("/stopwatch", (req, res) => {
+  res.sendFile(path.resolve(__dirname,"./Public","stopwatch.html"));
+});
+
 app.listen(PORT, () =>{
   console.log(`Server is running on port ${PORT}`.bgBlue.black)
 });
